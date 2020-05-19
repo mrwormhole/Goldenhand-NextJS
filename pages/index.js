@@ -17,10 +17,7 @@ export default function HomePage() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Goldenhand Software</title>
 
-        <link rel="stylesheet" href="./vendor/bulma/css/bulma.min.css" />
         <link rel="icon" href="/favicon.ico" />
-
-        <script src="./vendor/fontawesome/js/all.min.js"></script>
       </Head>
 
       <main>

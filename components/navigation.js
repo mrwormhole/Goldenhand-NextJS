@@ -1,6 +1,3 @@
-import { useState, useEffect } from "react";
-
-
 export default function Navigation() {
   return (
     <nav className="navbar" role="navigation" aria-label="main navigation">

@@ -1,3 +1,7 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faReply, faRetweet, faHeart } from '@fortawesome/free-solid-svg-icons'
+
+
 export default function Testimonial() {
     return (
         <article className="media">
@@ -17,13 +21,13 @@ export default function Testimonial() {
                 <nav className="level is-mobile">
                     <div className="level-left">
                         <a className="level-item">
-                            <span className="icon is-small"><i className="fas fa-reply"></i></span>
+                            <span className="icon is-small"><FontAwesomeIcon icon={faReply} /></span>
                         </a>
                         <a className="level-item">
-                            <span className="icon is-small"><i className="fas fa-retweet"></i></span>
+                            <span className="icon is-small"><FontAwesomeIcon icon={faRetweet} /></span>
                         </a>
                         <a className="level-item">
-                            <span className="icon is-small"><i className="fas fa-heart"></i></span>
+                            <span className="icon is-small"><FontAwesomeIcon icon={faHeart} /></span>
                         </a>
                     </div>
                 </nav>
