@@ -8,6 +8,7 @@ import Footer from "../components/footer"
 import Achievements from '../components/achievements'
 import Testimonial from '../components/testimonial'
 import Card from '../components/card'
+import Form from '../components/form'
 
 export default function HomePage() {
   return (
@@ -23,7 +24,7 @@ export default function HomePage() {
       <main>
         <Navigation />
         <Introduction />
-        {/*console.log(process.env.API_KEY)*/}
+        <Form />
         <Achievements />
         <Testimonial />
         
