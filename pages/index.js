@@ -21,13 +21,14 @@ export default function HomePage() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <Navigation />
+      <Navigation />
+
+      <main>  
         <Introduction />
         <Form />
         <Achievements />
         <Testimonial />
-        
+        <Card />
       </main>
 
       <Footer />  

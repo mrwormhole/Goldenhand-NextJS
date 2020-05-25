@@ -1,10 +1,22 @@
+import { Link, animateScroll as scroll } from "react-scroll";
+
+function toggleBurger() {
+  const navbarBurger = document.getElementsByClassName("navbar-burger")[0];
+  const navbarMenu = document.getElementsByClassName("navbar-menu")[0];
+
+  navbarBurger.classList.toggle("is-active");
+  navbarMenu.classList.toggle("is-active");
+}
+
 export default function Navigation() {
+
   return (
-    <nav className="navbar" role="navigation" aria-label="main navigation">
+    <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation">
       <div className="container">
       <div className="navbar-brand">
-        <a className="navbar-item" href="https://bulma.io">
-          <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28" />
+        <a className="navbar-item">
+          <img src="/logo.svg" />
+          <p className="company-title">GOLDENHAND SOFTWARE</p>
         </a>
 
         <a role="button" 
@@ -12,35 +24,69 @@ export default function Navigation() {
           aria-label="menu" 
           aria-expanded="false" 
           data-target="navbarBasicExample" 
-          onClick={() => {
-            const navbarBurger = document.getElementsByClassName("navbar-burger")[0];
-            const navbarMenu = document.getElementsByClassName("navbar-menu")[0];
-
-            navbarBurger.classList.toggle("is-active");
-            navbarMenu.classList.toggle("is-active");
-          }}>
+          onClick={() => toggleBurger()}>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
         </a>
       </div>
 
-      <div id="navbarBasicExample" className="navbar-menu">
-
-        <div className="navbar-start">
-          <a className="navbar-item"> Home </a>
-          <a className="navbar-item"> Documentation </a>
-        </div>
-
+      <div id="navbarBasicExample" className="navbar-menu"> 
         <div className="navbar-end">
-          <div className="navbar-item">
-            <div className="buttons">
-              <a className="button is-primary">
-                <strong>Sign up</strong>
-              </a>
-              <a className="button is-light"> Log in </a>
-            </div>
-          </div>
+          <Link className="navbar-item"
+            activeClass="is-active"
+            to="test"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500} onClick={() => toggleBurger()}> 
+              Home 
+          </Link>
+          <Link className="navbar-item"
+            activeClass="is-active"
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500} onClick={() => toggleBurger()}> 
+              About 
+          </Link>
+          <Link className="navbar-item"
+            activeClass="is-active"
+            to="services"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500} onClick={() => toggleBurger()}> 
+              Services
+          </Link>
+          <Link className="navbar-item"
+            activeClass="is-active"
+            to="portfolio"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500} onClick={() => toggleBurger()}> 
+              Portfolio 
+          </Link>
+          <Link className="navbar-item"
+            activeClass="is-active"
+            to="pricing"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500} onClick={() => toggleBurger()}> 
+              Pricing 
+          </Link>
+          <Link className="navbar-item"
+            activeClass="is-active"
+            to="Home"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500} onClick={() => toggleBurger()}> 
+              Contact 
+          </Link>
         </div>
 
       </div>

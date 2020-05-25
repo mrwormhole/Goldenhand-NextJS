@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Francois+One|Josefin+Sans&display=swap');
 
 // Goldenhand Software Colors
 $g-red: #F92F45;
@@ -7,26 +8,72 @@ $g-white: #D3D0A7;
 $g-green: #1B947F;
 $g-blue: #141C3C;
 
+// Goldenhand Software Fonts
+$g-header-font: "Francois One";
+$g-content-font: "Josefin Sans";
+
 // Set your brand colors
-$purple: $g-red;
-$pink: $g-yellow;
-$brown: $g-blue;
-$beige-light: $g-blue;
-$beige-lighter: $g-white;
+
 
 // Update Bulma's global variables
-$family-sans-serif: "Nunito", sans-serif;
+/*$family-sans-serif: "Nunito", sans-serif;
 $grey-dark: $brown;
 $grey-light: $beige-light;
 $primary: $purple;
 $link: $pink;
 $widescreen-enabled: false;
-$fullhd-enabled: false;
+$fullhd-enabled: false;*/
+
+//Bulma Navbar Customizations
+$navbar-height: 5rem;
+$navbar-item-color: $g-red;
+$navbar-item-active-color: $g-yellow;
+$navbar-item-active-background-color: hsl(0, 0%, 96%);
+$navbar-item-hover-color: $g-red;
+$navbar-item-hover-background-color: hsl(0, 0%, 96%);
+$navbar-burger-color: $g-red;
+/*$navbar-tab-hover-background-color: $g-red;
+$navbar-tab-hover-border-bottom-color: $g-red;
+$navbar-tab-active-color: $g-red;
+$navbar-tab-active-background-color: $g-red;
+$navbar-tab-active-border-bottom-color: $g-red;*/
+
 
 // Update some of Bulma's component variables
-$body-background-color: $beige-lighter;
+/*$body-background-color: $beige-lighter;
 $control-border-width: 2px;
 $input-border-color: transparent;
-$input-shadow: none;
+$input-shadow: none;*/
 
 @import "../node_modules/bulma/bulma.sass";
+
+.navbar-item {
+    padding: 0.5rem 1.5rem;
+    font-family: $g-content-font, serif;
+
+    img {
+        min-height: 3rem;
+        max-height: 4rem;
+    }
+}
+
+.navbar-burger:hover {
+    color: $g-red;
+}
+
+.company-title {
+    color: $g-blue;
+    font-family: $g-header-font;
+    font-size: 1.5rem;
+    padding-left: 0.5rem;
+    @media (max-width: 441px) {
+        font-size: 1rem;
+        color: $g-red;
+    }
+}
+
+
+
+
+
+

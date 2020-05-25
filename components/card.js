@@ -1,6 +1,6 @@
 export default function Card() {
     return (
-        <div className="card">
+        <div className="card" id="test">
             <div className="card-image">
                 <figure className="image is-4by3">
                     <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" />
@@ -24,7 +24,7 @@ export default function Card() {
                     Phasellus nec iaculis mauris. <a>@bulmaio</a>.
                     <a href="#">#css</a> <a href="#">#responsive</a>
                     <br />
-                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                    <time dateTime="2016-1-1">11:09 PM - 1 Jan 2016</time>
                 </div>
             </div>
         </div>

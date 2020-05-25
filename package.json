@@ -19,6 +19,7 @@
     "next": "9.4.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "react-scroll": "^1.7.16",
     "sass": "^1.26.5"
   },
   "devDependencies": {}
