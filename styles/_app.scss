@@ -47,6 +47,7 @@ $input-shadow: none;*/
 
 @import "../node_modules/bulma/bulma.sass";
 
+//navigation component styling
 .navbar-item {
     padding: 0.5rem 1.5rem;
     font-family: $g-content-font, serif;
@@ -71,6 +72,115 @@ $input-shadow: none;*/
         color: $g-red;
     }
 }
+//navigation component styling
+
+//preloader component styling
+$width: 100px;
+$height: $width/2;
+$amber: $g-red; //#FFC107;
+$grey: $g-blue; //#ccc;
+$time: 0.4s;
+
+@mixin animation($name) {
+  @-webkit-keyframes #{$name} {@content;}
+  @-moz-keyframes #{$name} {@content;}
+  @-o-keyframes #{$name} {@content;}
+  @keyframes #{$name} {@content;}
+}
+
+@include animation(up) {
+  0%, 100% {
+    transform: rotate(0);
+  } 
+  50% {
+    transform: rotate(-30deg);
+  }
+}
+
+@include animation(down) {
+  0%, 100% {
+    transform: rotate(0);
+  } 
+  50% {
+    transform: rotate(30deg);
+  }
+}
+
+@include animation(r-to-l) {
+  100% {
+    margin-left: -1px;
+  } 
+}
+
+@mixin use-animation($name, $time){
+  -webkit-animation: $name $time infinite;
+  -moz-animation: $name $time infinite;
+  -o-animation: $name $time infinite;
+  animation: $name $time infinite;
+}
+
+
+body{
+  .pacman:before, .pacman:after{
+    content: '';
+    position: absolute;
+    background: $amber;
+    width: $width;
+    height: $height;
+    left: 50%;
+    top: 50%;
+    margin-left: - $width/2;
+    margin-top: - $height;
+    border-radius: $height $height 0 0;
+    @include use-animation(up, $time);
+  }
+  
+  .pacman:after {
+    margin-top: -1px;
+    border-radius: 0 0 $height $height;
+    @include use-animation(down, $time);
+  } 
+  
+  .dot{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: $height/5;
+    height: $height/5;
+    margin-top: - $height/10;
+    margin-left: 30px;
+    border-radius: 50%;
+    background: $grey;
+    z-index: -1;
+    box-shadow: 30px 0 0 $grey,
+                60px 0 0 $grey,
+                90px 0 0 $grey,
+                120px 0 0 $grey,
+                150px 0 0 $grey;
+    @include use-animation(r-to-l, $time);
+  }
+}
+//preloader component styling
+
+//floating action button component styling
+.floating-action-button {
+    position: fixed;
+    background: $g-red;
+    color: $g-white;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 50%;
+    right: 0.75rem;
+    bottom: 0.75rem;
+    z-index: 11;
+
+    &:hover {
+        color: $g-white;
+    }
+}
+//floating action button component styling
+
+
 
 
 

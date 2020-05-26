@@ -1,7 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faReply, faRetweet, faHeart } from '@fortawesome/free-solid-svg-icons'
 
-
 export default function Testimonial() {
     return (
         <article className="media">

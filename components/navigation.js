@@ -1,4 +1,4 @@
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 function toggleBurger() {
   const navbarBurger = document.getElementsByClassName("navbar-burger")[0];
@@ -9,7 +9,6 @@ function toggleBurger() {
 }
 
 export default function Navigation() {
-
   return (
     <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation">
       <div className="container">
@@ -35,7 +34,7 @@ export default function Navigation() {
         <div className="navbar-end">
           <Link className="navbar-item"
             activeClass="is-active"
-            to="test"
+            to="home"
             spy={true}
             smooth={true}
             offset={0}
@@ -84,7 +83,7 @@ export default function Navigation() {
             spy={true}
             smooth={true}
             offset={0}
-            duration={500} onClick={() => toggleBurger()}> 
+            duration={500} onClick={() => scrollToTop()}> 
               Contact 
           </Link>
         </div>
