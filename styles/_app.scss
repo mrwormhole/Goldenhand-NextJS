@@ -166,7 +166,7 @@ body{
 .floating-action-button {
     position: fixed;
     background: $g-red;
-    color: $g-white;
+    color: white;
     text-align: center;
     font-size: 16px;
     border-radius: 50%;
@@ -175,7 +175,7 @@ body{
     z-index: 11;
 
     &:hover {
-        color: $g-white;
+        color: white;
     }
 }
 //floating action button component styling
@@ -193,14 +193,12 @@ body{
   span {
     color: $g-red;
   }
-  //color: $g-blue;
 }
 
 .subtitle {
   font-size: 1.5rem;
   color: $g-yellow;
   font-family: $g-content-font, serif;
-  //color: $g-blue;
 }
 //introduction component styling
 
