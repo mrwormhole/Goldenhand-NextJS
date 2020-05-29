@@ -64,7 +64,7 @@ $input-shadow: none;*/
 
 .company-title {
     color: $g-blue;
-    font-family: $g-header-font;
+    font-family: $g-header-font, sans-serif;
     font-size: 1.5rem;
     padding-left: 0.5rem;
     @media (max-width: 441px) {
@@ -179,6 +179,31 @@ body{
     }
 }
 //floating action button component styling
+
+//introduction component styling
+.hero {
+  background-color: $g-blue;
+  margin-top: 80px;
+}
+
+.title {
+  font-size: 3rem;
+  color: white;
+  font-family: $g-header-font, sans-serif;
+  span {
+    color: $g-red;
+  }
+  //color: $g-blue;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: $g-yellow;
+  font-family: $g-content-font, serif;
+  //color: $g-blue;
+}
+//introduction component styling
+
 
 
 
