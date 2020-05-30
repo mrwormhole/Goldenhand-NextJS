@@ -7,12 +7,12 @@ $g-yellow: #E6B749;
 $g-white: #D3D0A7;
 $g-green: #1B947F;
 $g-blue: #141C3C;
+$g-white-like: hsl(0, 0%, 94%);
 
 // Goldenhand Software Fonts
 $g-header-font: "Francois One";
 $g-content-font: "Josefin Sans";
 
-// Set your brand colors
 
 
 // Update Bulma's global variables
@@ -23,14 +23,15 @@ $primary: $purple;
 $link: $pink;
 $widescreen-enabled: false;
 $fullhd-enabled: false;*/
-
+$danger: $g-red;
+$info: $g-yellow;
 //Bulma Navbar Customizations
 $navbar-height: 5rem;
 $navbar-item-color: $g-red;
 $navbar-item-active-color: $g-red;
 $navbar-item-active-background-color: $g-blue;
 $navbar-item-hover-color: $g-red;
-$navbar-item-hover-background-color: hsl(0, 0%, 96%);
+$navbar-item-hover-background-color: $g-white-like;
 $navbar-burger-color: $g-red;
 /*$navbar-tab-hover-background-color: $g-red;
 $navbar-tab-hover-border-bottom-color: $g-red;
@@ -48,7 +49,8 @@ $input-shadow: none;*/
 @import "../node_modules/bulma/bulma.sass";
 
 //navigation component styling
-.navbar-item {
+.navbar {
+  .navbar-item {
     padding: 0.5rem 1.5rem;
     font-family: $g-content-font, serif;
 
@@ -56,13 +58,13 @@ $input-shadow: none;*/
         min-height: 3rem;
         max-height: 4rem;
     }
-}
+  }
 
-.navbar-burger:hover {
+  .navbar-burger:hover {
     color: $g-red;
-}
+  }
 
-.company-title {
+  .company-title {
     color: $g-blue;
     font-family: $g-header-font, sans-serif;
     font-size: 1.5rem;
@@ -71,14 +73,13 @@ $input-shadow: none;*/
         font-size: 1rem;
         color: $g-red;
     }
+  }
 }
 //navigation component styling
 
 //preloader component styling
 $width: 100px;
 $height: $width/2;
-$amber: $g-red; //#FFC107;
-$grey: $g-blue; //#ccc;
 $time: 0.4s;
 
 @mixin animation($name) {
@@ -124,7 +125,7 @@ body{
   .pacman:before, .pacman:after{
     content: '';
     position: absolute;
-    background: $amber;
+    background: $g-red;
     width: $width;
     height: $height;
     left: 50%;
@@ -150,13 +151,13 @@ body{
     margin-top: - $height/10;
     margin-left: 30px;
     border-radius: 50%;
-    background: $grey;
+    background: $g-blue;
     z-index: -1;
-    box-shadow: 30px 0 0 $grey,
-                60px 0 0 $grey,
-                90px 0 0 $grey,
-                120px 0 0 $grey,
-                150px 0 0 $grey;
+    box-shadow: 30px 0 0 $g-blue,
+                60px 0 0 $g-blue,
+                90px 0 0 $g-blue,
+                120px 0 0 $g-blue,
+                150px 0 0 $g-blue;
     @include use-animation(r-to-l, $time);
   }
 }
@@ -181,26 +182,61 @@ body{
 //floating action button component styling
 
 //introduction component styling
-.hero {
-  background-color: $g-blue;
-  margin-top: 80px;
-}
+#home {
+  .hero {
+    background-color: $g-blue;
+    margin-top: 80px;
+  }
+  
+  .title {
+    font-size: 3rem;
+    color: white;
+    font-family: $g-header-font, sans-serif;
+    span {
+      color: $g-red;
+    }
+  }
+  
+  .subtitle {
+    font-size: 1.5rem;
+    color: $g-yellow;
+    font-family: $g-content-font, serif;
+  }
 
-.title {
-  font-size: 3rem;
-  color: white;
-  font-family: $g-header-font, sans-serif;
-  span {
-    color: $g-red;
+  a {
+    &:nth-child(2) {
+      background-color: $g-red;
+    }
   }
 }
-
-.subtitle {
-  font-size: 1.5rem;
-  color: $g-yellow;
-  font-family: $g-content-font, serif;
-}
 //introduction component styling
+
+//about component styling
+#about {
+  background-color: $g-white-like;
+  .title {
+    font-size: 3rem;
+    color: $g-yellow;
+    font-family: $g-header-font, sans-serif;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+    color: $g-blue;
+    font-family: $g-content-font, serif;
+    line-height: 2rem;
+  }
+}
+//about component styling
+
+//card component styling
+
+//card component styling
+
+//services component styling
+
+//services component styling
+
 
 
 

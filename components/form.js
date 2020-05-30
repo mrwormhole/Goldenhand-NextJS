@@ -13,7 +13,7 @@ function isFormEmpty(data) {
 
 export default function Form() {
     return (
-        <form onSubmit={(e) => {
+        <form id="contact" onSubmit={(e) => {
             e.preventDefault();
             const [name, email, number, date, message] = e.target.elements;
             const data = {

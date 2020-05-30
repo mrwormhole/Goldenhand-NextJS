@@ -13,7 +13,7 @@ export default function Navigation() {
     <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation">
       <div className="container">
       <div className="navbar-brand">
-        <a className="navbar-item">
+        <a href="/" className="navbar-item">
           <img src="/logo.svg" />
           <p className="company-title">GOLDENHAND SOFTWARE</p>
         </a>
@@ -69,7 +69,7 @@ export default function Navigation() {
               Portfolio 
           </Link>
           <Link className="navbar-item"
-            activeClass="is-active"
+            activeClass=""
             to="pricing"
             spy={true}
             smooth={true}
@@ -78,12 +78,12 @@ export default function Navigation() {
               Pricing 
           </Link>
           <Link className="navbar-item"
-            activeClass="is-active"
-            to="Home"
+            activeClass=""
+            to="contact"
             spy={true}
             smooth={true}
             offset={-80}
-            duration={500} onClick={() => scrollToTop()}> 
+            duration={500} onClick={() => toggleBurger()}> 
               Contact 
           </Link>
         </div>

@@ -3,11 +3,13 @@ import Head from 'next/head'
 import Preloader from "../components/preloader"
 import Navigation from "../components/navigation"
 import Introduction from "../components/introduction"
+import About from '../components/about'
+import Services from '../components/services'
 
 import Footer from "../components/footer"
 import Achievements from '../components/achievements'
 import Testimonial from '../components/testimonial'
-import Card from '../components/card'
+
 import Form from '../components/form'
 import FloatingActionButton from "../components/floatingActionButton" 
 
@@ -44,11 +46,13 @@ export default function HomePage() {
       <Navigation />
 
       <main>
-        <Introduction />  
+        <Introduction /> 
+        <About /> 
+        <Services />
+
         <Form />
         <Achievements />
         <Testimonial />
-        <Card />
       </main>
 
       <FloatingActionButton />
