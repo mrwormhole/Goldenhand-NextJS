@@ -163,10 +163,26 @@ body{
 }
 //preloader component styling
 
+//illustration image animations for jiggling
+.animated-up-down {
+  -webkit-animation: mover 1s linear infinite  alternate;
+  animation: mover 1s linear infinite  alternate;
+}
+
+@-webkit-keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20px); }
+}
+//
+
 //floating action button component styling
 .floating-action-button {
     position: fixed;
-    background: $g-red;
+    background: $g-yellow;
     color: white;
     text-align: center;
     font-size: 16px;
@@ -218,6 +234,7 @@ body{
     font-size: 3rem;
     color: $g-yellow;
     font-family: $g-header-font, sans-serif;
+    text-align: center;
   }
 
   .subtitle {
@@ -226,15 +243,63 @@ body{
     font-family: $g-content-font, serif;
     line-height: 2rem;
   }
+
 }
 //about component styling
 
 //card component styling
+#box {
+  padding: 1rem; 
+  margin: 0 0.5rem 1rem 0.5rem;
+  background: #fff;
+  overflow: hidden;
+  text-align: center;
+  height: 95%;
 
+  .card-content {
+    padding: 0.5rem;
+  }
+
+  .card-icon-wrapper {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    .card-icon-shaper {
+      background-color: $g-blue;
+      height: 80px;
+      width: 80px;
+      padding-top: 16px;
+      border-radius: 20px;
+    }
+  }
+
+  .card-title {
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    color: $g-red;
+    font-family: $g-content-font, serif;
+  }
+
+  .card-subtitle {
+    padding-top: 0.5rem;
+    font-size: 1rem;
+    color: $g-blue;
+    font-family: $g-content-font, serif;
+  }
+}
 //card component styling
 
 //services component styling
-
+#services {
+  background-color: $g-red;
+  .title {
+    font-size: 3rem;
+    color: $g-white-like;
+    font-family: $g-header-font, sans-serif;
+    text-align: center;
+  }
+}
 //services component styling
 
 

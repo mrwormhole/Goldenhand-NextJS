@@ -5,10 +5,10 @@ export default function About() {
         <section className="section is-medium" id="about">
                 <div className="columns">
                     <div className= "column is-4 is-offset-2">
-                        <img src="/business.png" />
+                        <img className="animated-up-down" src="/business.png" alt="About our business" />
                     </div>
                     <div className="column is-4">
-                        <h2 className="title" style={{textAlign: "center"}}> About Us </h2>
+                        <h2 className="title"> About Us </h2>
                         <br />
                         <p className="subtitle"> 
                             Goldenhand Software supports the young talented developers and the formal grown-up businesses 
@@ -19,7 +19,7 @@ export default function About() {
                             mobile/web apps of on the various areas such as memory efficieny, network load, unit testing and performance.
                         </p>
                         <br />
-                        <div class="buttons is-centered">
+                        <div className="buttons is-centered">
                             <Link className="button is-danger is-rounded is-medium" style={{width: "40%"}}
                                 activeClass=""
                                 to="contact"

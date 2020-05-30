@@ -34,7 +34,7 @@ export default function Introduction() {
               </div>
             
               <div className="column is-5">
-                  <img src="/web_development.png" alt="web development image"/>
+                  <img className="animated-up-down" src="/web_development.png" alt="web development image"/>
               </div>
             </div>
           </div>
