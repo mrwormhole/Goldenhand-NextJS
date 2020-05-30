@@ -22,7 +22,7 @@ export default function Achievements() {
                 <div className="level-item has-text-centered">
                     <div>
                         <FontAwesomeIcon icon={faBug} style={{color: "#E6B749", fontSize: "2rem"}}/>
-                        <p className="title">Squashed Bugs</p>
+                        <p className="title">Bugs Squashed</p>
                         <p className="subtitle">499</p>
                     </div>
                 </div>
