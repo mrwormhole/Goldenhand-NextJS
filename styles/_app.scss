@@ -63,16 +63,26 @@ $input-shadow: none;*/
   .navbar-burger:hover {
     color: $g-red;
   }
+}
 
+.company-title {
+  color: $g-blue;
+  font-family: $g-header-font, sans-serif;
+  font-size: 1.5rem;
+  padding-left: 0.5rem;
+}
+
+@media (max-width: 576px) {
   .company-title {
-    color: $g-blue;
-    font-family: $g-header-font, sans-serif;
     font-size: 1.5rem;
-    padding-left: 0.5rem;
-    @media (max-width: 441px) {
-        font-size: 1rem;
-        color: $g-red;
-    }
+    color: $g-red;
+  }
+}
+
+@media (max-width: 441px) {
+  .company-title {
+    font-size: 1rem;
+    color: $g-red;
   }
 }
 //navigation component styling
@@ -120,7 +130,6 @@ $time: 0.4s;
   animation: $name $time infinite;
 }
 
-
 body{
   .pacman:before, .pacman:after{
     content: '';
@@ -165,19 +174,33 @@ body{
 
 //illustration image animations for jiggling
 .animated-up-down {
-  -webkit-animation: mover 1s linear infinite  alternate;
-  animation: mover 1s linear infinite  alternate;
+  -webkit-animation: mover-ud 1s linear infinite  alternate;
+  animation: mover-ud 1s linear infinite  alternate;
 }
 
-@-webkit-keyframes mover {
+.animated-right-left {
+  -webkit-animation: mover-rl 1s linear infinite alternate;
+  animation: mover-rl 1s linear infinite alternate;
+}
+
+@-webkit-keyframes mover-ud {
   0% { transform: translateY(0); }
   100% { transform: translateY(-20px); }
 }
-@keyframes mover {
+@keyframes mover-ud {
   0% { transform: translateY(0); }
   100% { transform: translateY(-20px); }
 }
-//
+
+@-webkit-keyframes mover-rl {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-20px); }
+}
+@keyframes mover-rl {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-20px); }
+}
+//illustration image animatons for jiggling
 
 //floating action button component styling
 .floating-action-button {
@@ -243,7 +266,6 @@ body{
     font-family: $g-content-font, serif;
     line-height: 2rem;
   }
-
 }
 //about component styling
 
@@ -257,7 +279,7 @@ body{
   height: 95%;
 
   .card-content {
-    padding: 0.5rem;
+    padding: 0.75rem;
   }
 
   .card-icon-wrapper {
@@ -301,6 +323,58 @@ body{
   }
 }
 //services component styling
+
+//achievements component styling
+#achievements {
+  background-color: $g-blue;
+  .title {
+    font-size: 1rem;
+    font-weight: 400;
+    color: $g-white-like;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
+  .subtitle {
+    font-size: 1rem;
+    font-weight: 750;
+    color: $g-red;
+    margin-top: 0.25rem;;
+  }
+}
+//achievements component styling
+
+//details component styling
+#details {
+  background-color: $g-white-like;
+  .header {
+    font-size: 3rem;
+    color: $g-yellow;
+    font-family: $g-header-font, sans-serif;
+    text-align: center;
+  }
+  .title {
+    font-size: 2.5rem;
+    color: $g-red;
+    font-family: $g-content-font, serif;
+    text-align: center;
+  }
+
+  .subtitle {
+    padding-top: 1rem;
+    font-size: 1.25rem;
+    color: $g-blue;
+    font-family: $g-content-font, serif;
+    line-height: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .reverse-columns {
+    flex-direction: column-reverse;
+    display: flex;
+  }
+}
+//details component styling
 
 
 

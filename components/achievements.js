@@ -1,30 +1,39 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUsers, faBriefcase, faBug, faSmile } from '@fortawesome/free-solid-svg-icons'
+
 export default function Achievements() {
     return (
-        <div className="level">
-            <div className="level-item has-text-centered">
-                <div>
-                    <p className="heading">Tweets</p>
-                    <p className="title">3,456</p>
+        <section className="section" id="achievements">
+            <div className="level" >
+                <div className="level-item has-text-centered">
+                    <div>
+                        <FontAwesomeIcon icon={faUsers} style={{color: "#E6B749", fontSize: "2rem"}}/>    
+                        <p className="title">Happy Clients</p>
+                        <p className="subtitle">48</p>
+                    </div>
+                </div>
+                <div className="level-item has-text-centered">
+                    <div>
+                        <FontAwesomeIcon icon={faBriefcase} style={{color: "#E6B749", fontSize: "2rem"}}/>
+                        <p className="title">Projects Done</p>
+                        <p className="subtitle">42</p>
+                    </div>
+                </div>
+                <div className="level-item has-text-centered">
+                    <div>
+                        <FontAwesomeIcon icon={faBug} style={{color: "#E6B749", fontSize: "2rem"}}/>
+                        <p className="title">Squashed Bugs</p>
+                        <p className="subtitle">499</p>
+                    </div>
+                </div>
+                <div className="level-item has-text-centered">
+                    <div>
+                        <FontAwesomeIcon icon={faSmile} style={{color: "#E6B749", fontSize: "2rem"}}/>
+                        <p className="title">Satisfaction Rate</p>
+                        <p className="subtitle">98%</p>
+                    </div>
                 </div>
             </div>
-            <div className="level-item has-text-centered">
-                <div>
-                    <p className="heading">Following</p>
-                    <p className="title">123</p>
-                </div>
-            </div>
-            <div className="level-item has-text-centered">
-                <div>
-                    <p className="heading">Followers</p>
-                    <p className="title">456K</p>
-                </div>
-            </div>
-            <div className="level-item has-text-centered">
-                <div>
-                    <p className="heading">Likes</p>
-                    <p className="title">789</p>
-                </div>
-            </div>
-        </div>
+        </section>
     );
 }

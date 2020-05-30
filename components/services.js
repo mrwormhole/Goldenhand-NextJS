@@ -27,7 +27,7 @@ export default function Services() {
                 </div>
                 <div className="column is-4-tablet is-3-desktop">
                     <Card serviceName={"Content Writing"} icon={faPenFancy}
-                        serviceDescription={"Making content is highly important to become part of your customers' lifestyle and create relationships that work for your business via social media or your web app"} />
+                        serviceDescription={"Making content is highly important to become part of your customers' lifestyle and create relationships that work for your business via social media or web app"} />
                 </div>
                 <div className="column is-4-tablet is-3-desktop">
                     <Card serviceName={"Maintenance"} icon={faWrench}

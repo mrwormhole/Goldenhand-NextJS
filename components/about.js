@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 export default function About() {
     return (
         <section className="section is-medium" id="about">
-                <div className="columns">
+                <div className="columns reverse-columns">
                     <div className= "column is-4 is-offset-2">
                         <img className="animated-up-down" src="/business.png" alt="About our business" />
                     </div>

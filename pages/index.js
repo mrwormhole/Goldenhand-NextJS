@@ -14,6 +14,7 @@ import Form from '../components/form'
 import FloatingActionButton from "../components/floatingActionButton" 
 
 import { useState, useEffect } from 'react'
+import Details from '../components/details'
 
 export default function HomePage() {
   const [isLoading, setIsLoading] = useState(true);
@@ -49,10 +50,21 @@ export default function HomePage() {
         <Introduction /> 
         <About /> 
         <Services />
-        
-        <Form />
         <Achievements />
+        <Details />
+        {/*
+        // TODO: Images can be vertically centered in future?? 
+        */}
+        {/* 
+        
+        Portfolio
+        Pricing
+        Contact
+        */}
+      
+        
         <Testimonial />
+        <Form />
       </main>
 
       <FloatingActionButton />

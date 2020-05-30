@@ -31,9 +31,6 @@ export default function Testimonial() {
                     </div>
                 </nav>
             </div>
-            <div className="media-right">
-                <button className="delete"></button>
-            </div>
         </article>
     );
 }
