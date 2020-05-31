@@ -1,16 +1,22 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEye } from '@fortawesome/free-solid-svg-icons'
 
 export default function Project({projectName, projectLink, projectImage}) {
     return (
-        <div className="card " id="box">
-            <div className="card-content">
-                <div className="card-icon-wrapper">
-                    <div className="card-icon-shaper">
-                        <FontAwesomeIcon icon={icon} style={{color: "#E6B749", fontSize: "3rem"}} />
+        <div className="card is-paddingless" id="project">
+            
+            <div className="project-image">
+                <figure className="image is-2by1">
+                    <img src={projectImage} alt={projectName} />
+                </figure>
+            </div>
+            <div className="project-overlay">
+                <a href={projectLink} className="stretched-link" id="cardlink">
+                    <div className="project-container">
+                        <p className="project-title">{projectName}</p>
+                        <FontAwesomeIcon icon={faEye} style={{color: "#E6B749", fontSize: "6rem"}} />
                     </div>
-                </div>
-                
-                <h4 className="card-title"> adsdads </h4>
-                <p className="card-subtitle"> asdsadads </p>
+                </a>
             </div>
         </div>
     );

@@ -15,6 +15,7 @@ import FloatingActionButton from "../components/floatingActionButton"
 
 import { useState, useEffect } from 'react'
 import Details from '../components/details'
+import Portfolio from '../components/portfolio'
 
 export default function HomePage() {
   const [isLoading, setIsLoading] = useState(true);
@@ -52,17 +53,17 @@ export default function HomePage() {
         <Services />
         <Achievements />
         <Details />
+        <Portfolio />
         {/*
         // !Weird 800px tablets!: Images can be vertically centered in future?? 
         */}
         {/* 
-          //TODO Testimonial <- Green
-          //TODO Portfolio <- Blue
+          //TODO Testimonial <- Blue
           //TODO Pricing <- White
           //TODO Contact <- Red
           //TODO Footer <- Blue
         */}
-      
+        
         
         <Testimonial />
         <Form />

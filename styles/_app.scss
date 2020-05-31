@@ -378,9 +378,61 @@ body{
 }
 //details component styling
 
+//project component styling
+#project {
+  .project-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1.25rem;
+    text-shadow: 2px 2px 4px $g-white-like;
+    .project-container {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      visibility: hidden;
+      
+    }
+    &:hover {
+      background-color: rgba(0,0,0,0.5);
+      .project-container {
+        height: 100%;
+        border: 10px $g-yellow solid;
+        visibility: visible;
+      }
+    }
+  }
+
+  .stretched-link::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: auto;
+    content: "";
+  }
+
+  .project-title {
+    //margin-bottom: 0.75rem;
+    font-size: 2rem;
+    color: $g-white-like;
+    font-family: $g-content-font, serif;
+  }
+
+}
+//project component syling
+
 //portfolio component styling
 #portfolio {
-  background-color: $g-red;
+  background-color: $g-green;
   .title {
     font-size: 3rem;
     color: $g-white-like;
