@@ -53,13 +53,14 @@ export default function HomePage() {
         <Achievements />
         <Details />
         {/*
-        // TODO: Images can be vertically centered in future?? 
+        // !Weird 800px tablets!: Images can be vertically centered in future?? 
         */}
         {/* 
-        
-        Portfolio
-        Pricing
-        Contact
+          //TODO Testimonial <- Green
+          //TODO Portfolio <- Blue
+          //TODO Pricing <- White
+          //TODO Contact <- Red
+          //TODO Footer <- Blue
         */}
       
         

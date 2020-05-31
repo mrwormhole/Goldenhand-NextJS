@@ -47,6 +47,8 @@ $input-border-color: transparent;
 $input-shadow: none;*/
 
 @import "../node_modules/bulma/bulma.sass";
+@import "../node_modules/slick-carousel/slick/slick.css";
+@import "../node_modules/slick-carousel/slick/slick-theme.css";
 
 //navigation component styling
 .navbar {
@@ -376,7 +378,17 @@ body{
 }
 //details component styling
 
-
+//portfolio component styling
+#portfolio {
+  background-color: $g-red;
+  .title {
+    font-size: 3rem;
+    color: $g-white-like;
+    font-family: $g-header-font, sans-serif;
+    text-align: center;
+  }
+}
+//portfolio component styling
 
 
 
