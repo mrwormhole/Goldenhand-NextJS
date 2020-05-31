@@ -69,7 +69,7 @@ export default function Navigation() {
                 Portfolio 
             </Link>
             <Link className="navbar-item"
-              activeClass=""
+              activeClass="is-active"
               to="pricing"
               spy={true}
               smooth={true}
@@ -78,7 +78,7 @@ export default function Navigation() {
                 Pricing 
             </Link>
             <Link className="navbar-item"
-              activeClass=""
+              activeClass="is-active"
               to="contact"
               spy={true}
               smooth={true}

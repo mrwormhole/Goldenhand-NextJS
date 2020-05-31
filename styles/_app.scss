@@ -485,6 +485,28 @@ body{
 
 
 
+//footer component styling 
+.footer {
+  background-color: $g-blue;
+  text-align: center;
+  padding: 3rem 1.5rem;
+  p {
+    color: $g-white-like;
+    margin-bottom: 0.5rem;
+    strong {
+      color: $g-yellow;
+    }
+  }
+  a {
+    color: $g-red;
+  }
+}
+//footer component styling 
+
+
+
+
+
 
 
 

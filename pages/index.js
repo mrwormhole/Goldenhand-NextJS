@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { useState, useEffect } from 'react'
 
 import Preloader from "../components/preloader"
 import Navigation from "../components/navigation"
@@ -9,15 +10,10 @@ import Achievements from '../components/achievements'
 import Details from '../components/details'
 import Portfolio from '../components/portfolio'
 import Testimonials from '../components/testimonials'
-
-
+import Pricing from '../components/pricing'
+import Contact from '../components/contact'
 import Footer from "../components/footer"
 import FloatingActionButton from "../components/floatingActionButton" 
-
-
-import Form from '../components/form'
-
-import { useState, useEffect } from 'react'
 
 export default function HomePage() {
   const [isLoading, setIsLoading] = useState(true);
@@ -56,18 +52,17 @@ export default function HomePage() {
         <Achievements />
         <Details />
         <Portfolio />
+        <Testimonials />
+        <Pricing />
+        <Contact />
         {/*
         // !Weird 800px tablets!: Images can be vertically centered in future?? 
         */}
         {/* 
           //TODO Pricing <- White
           //TODO Contact <- Red
-          //TODO Footer <- Blue
         */}
-        
-        
-        <Testimonials />
-        <Form />
+         
       </main>
 
       <FloatingActionButton />
