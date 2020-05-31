@@ -5,17 +5,19 @@ import Navigation from "../components/navigation"
 import Introduction from "../components/introduction"
 import About from '../components/about'
 import Services from '../components/services'
-
-import Footer from "../components/footer"
 import Achievements from '../components/achievements'
-import Testimonial from '../components/testimonial'
-
-import Form from '../components/form'
-import FloatingActionButton from "../components/floatingActionButton" 
-
-import { useState, useEffect } from 'react'
 import Details from '../components/details'
 import Portfolio from '../components/portfolio'
+import Testimonial from '../components/testimonial'
+
+
+import Footer from "../components/footer"
+import FloatingActionButton from "../components/floatingActionButton" 
+
+
+import Form from '../components/form'
+
+import { useState, useEffect } from 'react'
 
 export default function HomePage() {
   const [isLoading, setIsLoading] = useState(true);

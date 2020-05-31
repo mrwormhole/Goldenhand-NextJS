@@ -1,8 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-export default function Card({serviceName, serviceDescription, icon}) {
+export default function ServiceCard({serviceName, serviceDescription, icon}) {
     return (
-        <div className="card " id="box">
+        <div className="card " id="service-card">
             <div className="card-content">
                 <div className="card-icon-wrapper">
                     <div className="card-icon-shaper">
