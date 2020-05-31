@@ -24,7 +24,7 @@ export default function Form() {
             };
 
             if(!isFormEmpty(data)) {
-                fetch(`${process.env.DOMAIN_NAME}/api/email`, {
+                fetch("/api/email", {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(data)
