@@ -1,9 +1,11 @@
 import sendGrid from "@sendgrid/mail"
 
 export default async (req, res) => {
+    res.setHeader("Access-Control-Allow-Methods", "GET,POST,PUT,PATCH,DELETE");
+    
     if (req.method === "POST") {
         sendGrid.setApiKey(process.env.SENDGRID_API_KEY);
-        
+
         const mailData = {
             to: "info@goldenhandsoftware.co.uk",
             from: req.body.email,
