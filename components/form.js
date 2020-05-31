@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser, faEnvelope, faPhone, faCalendar } from '@fortawesome/free-solid-svg-icons'
-import Axios from "axios"
 
 function isFormEmpty(data) {
     if (data.email.trim() == "" ||  data.fullName.trim() == "" ||

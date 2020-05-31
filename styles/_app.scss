@@ -442,7 +442,46 @@ body{
 }
 //portfolio component styling
 
+//testimonial card component styling
+#testimonial-card {
+  margin: auto;
+  width: 80%; 
+  
+  nav {
+    margin: 0.5rem 0rem;
+  }
 
+  span {
+    color: $g-yellow;
+  }
+
+  .author-comment {
+    font-family: $g-content-font, serif;
+    font-size: 1rem;
+    color: $g-white-like;
+    line-height: 1.2rem;
+  }
+
+  .author-job {
+    color: $g-red;
+    font-size: 0.875rem;
+    font-family: $g-content-font, serif;
+  }
+
+  .author {
+    color: $g-red;
+    font-size: 1.2rem;
+    font-family: $g-content-font, serif;
+  }
+}
+//testimonial card component styling
+
+//testimonials component styling
+// TODO: customize slick theme of slider which sucks
+#testimonials {
+  background-color: $g-blue;
+}
+//testimonials component styling
 
 
 

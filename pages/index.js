@@ -8,7 +8,7 @@ import Services from '../components/services'
 import Achievements from '../components/achievements'
 import Details from '../components/details'
 import Portfolio from '../components/portfolio'
-import Testimonial from '../components/testimonial'
+import Testimonials from '../components/testimonials'
 
 
 import Footer from "../components/footer"
@@ -60,14 +60,13 @@ export default function HomePage() {
         // !Weird 800px tablets!: Images can be vertically centered in future?? 
         */}
         {/* 
-          //TODO Testimonial <- Blue
           //TODO Pricing <- White
           //TODO Contact <- Red
           //TODO Footer <- Blue
         */}
         
         
-        <Testimonial />
+        <Testimonials />
         <Form />
       </main>
 
