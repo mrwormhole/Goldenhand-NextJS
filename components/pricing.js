@@ -47,7 +47,7 @@ export default function Pricing() {
                     </div>
                 </div>
                 <div className="column is-3-tablet is-3-desktop">
-                    <div className="plan">
+                    <div className="">
                         <h3>Diamond</h3>
                         <h4> £999</h4>
                         <h5>+500£ Rush Delivery</h5>
