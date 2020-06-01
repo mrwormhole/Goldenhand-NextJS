@@ -33,6 +33,11 @@ export default function HomePage() {
   return (
     <React.Fragment>
       <Head>
+        {/*
+        // !Weird 800px tablets!: Illustration images can be vertically centered in future?? 
+        // TODO: SEO WORK
+        // TODO: customize slick theme of slider which sucks
+        */}
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Goldenhand Software</title>
@@ -55,14 +60,6 @@ export default function HomePage() {
         <Testimonials />
         <Pricing />
         <Contact />
-        {/*
-        // !Weird 800px tablets!: Images can be vertically centered in future?? 
-        */}
-        {/* 
-          //TODO Pricing <- White
-          //TODO Contact <- Red
-        */}
-         
       </main>
 
       <FloatingActionButton />

@@ -13,18 +13,6 @@ $g-white-like: hsl(0, 0%, 94%);
 $g-header-font: "Francois One";
 $g-content-font: "Josefin Sans";
 
-
-
-// Update Bulma's global variables
-/*$family-sans-serif: "Nunito", sans-serif;
-$grey-dark: $brown;
-$grey-light: $beige-light;
-$primary: $purple;
-$link: $pink;
-$widescreen-enabled: false;
-$fullhd-enabled: false;*/
-$danger: $g-red;
-$info: $g-yellow;
 //Bulma Navbar Customizations
 $navbar-height: 5rem;
 $navbar-item-color: $g-red;
@@ -33,12 +21,9 @@ $navbar-item-active-background-color: $g-blue;
 $navbar-item-hover-color: $g-red;
 $navbar-item-hover-background-color: $g-white-like;
 $navbar-burger-color: $g-red;
-/*$navbar-tab-hover-background-color: $g-red;
-$navbar-tab-hover-border-bottom-color: $g-red;
-$navbar-tab-active-color: $g-red;
-$navbar-tab-active-background-color: $g-red;
-$navbar-tab-active-border-bottom-color: $g-red;*/
 
+// Bulma Form Customization
+$input-radius: 20px;
 
 // Update some of Bulma's component variables
 /*$body-background-color: $beige-lighter;
@@ -477,18 +462,229 @@ body{
 //testimonial card component styling
 
 //testimonials component styling
-// TODO: customize slick theme of slider which sucks
 #testimonials {
   background-color: $g-blue;
 }
 //testimonials component styling
+
+//pricing component styling
+#pricing {
+  background-color: $g-white-like;
+  .column {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2.5rem;
+    margin: 0px 0px 2rem;
+    box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
+  }
+  .column:nth-child(2) {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2.5rem;
+    margin: -2rem -0.33rem 0px;
+    box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
+    z-index: 10;
+  }
+  h3 {
+    color: $g-blue;
+    font-size: 2rem;
+    font-weight: 300px;
+    font-family: $g-header-font, sans-serif;
+    margin-bottom: 1rem;
+  }
+  h4 {
+    color: $g-green;
+    font-size: 4rem;
+    font-weight: 400px;
+  }
+  h5 {
+    color: #bababa;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  ul {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: $g-content-font, serif;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding: 0;
+    list-style: none;
+    color: #999;
+    text-align: left;
+    line-height: 1rem;
+    li {
+      padding-bottom: 0.75rem;
+      display: list-item;
+      text-align: -webkit-match-parent;
+    }
+  }
+  .plan { 
+    position: relative;
+  }
+}
+
+//stupid ribbon challenge
+@import url(https://fonts.googleapis.com/css?family=Lato:700);
+body {
+  
+}
+.box {
+  position: relative;
+}
+
+/* common */
+.ribbon {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  position: absolute;
+  padding: -40px;
+}
+.ribbon::before,
+.ribbon::after {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  display: block;
+  border: 5px solid #2980b9;
+}
+.ribbon span {
+  position: absolute;
+  display: block;
+  width: 225px;
+  padding: 15px 0;
+  background-color: #3498db;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  color: #fff;
+  font: 700 18px/1 'Lato', sans-serif;
+  text-shadow: 0 1px 1px rgba(0,0,0,.2);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* top left*/
+.ribbon-top-left {
+  top: -10px;
+  left: -10px;
+}
+.ribbon-top-left::before,
+.ribbon-top-left::after {
+  border-top-color: transparent;
+  border-left-color: transparent;
+}
+.ribbon-top-left::before {
+  top: 0;
+  right: 0;
+}
+.ribbon-top-left::after {
+  bottom: 0;
+  left: 0;
+}
+.ribbon-top-left span {
+  right: -25px;
+  top: 30px;
+  transform: rotate(-45deg);
+}
+
+/* top right*/
+.ribbon-top-right {
+  top: -10px;
+  right: -10px;
+}
+.ribbon-top-right::before,
+.ribbon-top-right::after {
+  border-top-color: transparent;
+  border-right-color: transparent;
+}
+.ribbon-top-right::before {
+  top: 0;
+  left: 0;
+}
+.ribbon-top-right::after {
+  bottom: 0;
+  right: 0;
+}
+.ribbon-top-right span {
+  left: -25px;
+  top: 30px;
+  transform: rotate(45deg);
+}
+
+/* bottom left*/
+.ribbon-bottom-left {
+  bottom: -10px;
+  left: -10px;
+}
+.ribbon-bottom-left::before,
+.ribbon-bottom-left::after {
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+.ribbon-bottom-left::before {
+  bottom: 0;
+  right: 0;
+}
+.ribbon-bottom-left::after {
+  top: 0;
+  left: 0;
+}
+.ribbon-bottom-left span {
+  right: -25px;
+  bottom: 30px;
+  transform: rotate(225deg);
+}
+
+/* bottom right*/
+.ribbon-bottom-right {
+  bottom: -10px;
+  right: -10px;
+}
+.ribbon-bottom-right::before,
+.ribbon-bottom-right::after {
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+}
+.ribbon-bottom-right::before {
+  bottom: 0;
+  left: 0;
+}
+.ribbon-bottom-right::after {
+  top: 0;
+  right: 0;
+}
+.ribbon-bottom-right span {
+  left: -25px;
+  bottom: 30px;
+  transform: rotate(-225deg);
+}
+//stupid ribbon challenge
+
+.pricing-not-included {
+  text-decoration: line-through;
+}
+
+.pricing-title {
+  font-size: 3rem;
+  color: $g-yellow;
+  font-family: $g-header-font, sans-serif;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+  .pricing-title {
+    margin-bottom: 1.5rem;
+  }
+}
+//pricing component styling
 
 //contact component styling
 #contact {
   background-color: $g-red;
   .title {
     font-size: 3rem;
-    color: $g-yellow;
+    color: $g-white-like;
     font-family: $g-header-font, sans-serif;
     text-align: center;
     text-align: center;
@@ -525,7 +721,7 @@ body{
 
   h5 {
     font-family: $g-content-font, serif;
-    color: $g-yellow;
+    color: $g-red;
     font-size: 1rem;
     text-align: center;
   }
