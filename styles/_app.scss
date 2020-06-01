@@ -24,6 +24,7 @@ $navbar-burger-color: $g-red;
 
 // Bulma Form Customization
 $input-radius: 20px;
+$danger: $g-red;
 
 // Update some of Bulma's component variables
 /*$body-background-color: $beige-lighter;
@@ -227,12 +228,6 @@ body{
     font-size: 1.5rem;
     color: $g-yellow;
     font-family: $g-content-font, serif;
-  }
-
-  a {
-    &:nth-child(2) {
-      background-color: $g-red;
-    }
   }
 }
 //introduction component styling
