@@ -483,7 +483,65 @@ body{
 }
 //testimonials component styling
 
+//contact component styling
+#contact {
+  background-color: $g-red;
+  .title {
+    font-size: 3rem;
+    color: $g-yellow;
+    font-family: $g-header-font, sans-serif;
+    text-align: center;
+    text-align: center;
+  }
+  .small-title {
+    font-family: $g-content-font, serif;
+    color: $g-blue;
+    font-size: 1.5rem;
+    text-align: center;
+  }
 
+  .notification {
+    display: none;
+  }
+
+  a:nth-child(1) {
+    color: 3b5998;
+    &:hover {
+      color: $g-yellow
+    }
+  }
+  a:nth-child(2) {
+    color: #1da1f2;
+    &:hover {
+      color: $g-yellow
+    }
+  }
+  a:nth-child(3) {
+    color: #c32aa3;
+    &:hover {
+      color: $g-yellow
+    }
+  }
+
+  h5 {
+    font-family: $g-content-font, serif;
+    color: $g-yellow;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  form {
+    label {
+      font-family: $g-content-font, serif;
+      color: $g-blue;
+      font-size: 1rem;
+    }
+    button {
+      width: 60%;
+    }
+  }
+}
+//contact component styling
 
 //footer component styling 
 .footer {
