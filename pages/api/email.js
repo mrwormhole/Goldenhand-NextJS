@@ -6,7 +6,7 @@ export default async (req, res) => {
         const {fullName, email, phoneNumber, startDate, message} = req.body;
         
         const mailData = {
-            to: "talhaaltinel@hotmail.com",
+            to: "info@goldenhandsoftware.co.uk",
             from: email,
             subject: 'New message from a Client',
             html: `<strong> Hello Goldenhand Software! </strong> 
