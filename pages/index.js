@@ -35,9 +35,15 @@ export default function HomePage() {
       <Head>
         {/*
         // !Weird 800px tablets!: Illustration images can be vertically centered in future?? 
-        // TODO: SEO WORK
-        // TODO: customize slick theme of slider which sucks
+        // TODO: customize slick theme of slider which sucks(maybe try swiperjs)
         */}
+		    <meta name="title" content="Goldenhand Software London" />
+		    <meta name="description" content="Goldenhand Software London is a company established in London with a great team. We offer wide range of web development and social media management services with a wide range of languages at a reasonable cost. This is the official site of Goldenhand Software London." />
+		    <meta name="keywords" content="goldenhand, software, london, goldenhand london, goldenhand software, software london, talha, altinel, talha altinel, web, development, web development london, web london, development london, london web development, web development agency, social, media, management, social media management london, media management london, social media london, website designer agency for convenient cost" />
+		    <meta name="robots" content="index, follow" />
+		    <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+		    <meta name="language" content="English" />
+		    <meta name="author" content="Goldenhand Software London" />
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Goldenhand Software</title>
