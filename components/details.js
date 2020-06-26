@@ -10,7 +10,7 @@ export default function Details() {
                     <p className="subtitle"> 
                         <span style={{display:"inline-block", width: "16px"}}></span>
                         Our developers work hard for the development of software products as well as the problems that arise from it. 
-                        We know that the best way to deal with the problems is to engage in a testing environment during the whole development time.
+                        Goldenhand Software knows that the best way to deal with the problems is to engage in a testing environment during the whole development time.
                     </p>
                 </div>
                 <div className="column is-4 ">
@@ -26,7 +26,7 @@ export default function Details() {
                     <h2 className="title"> Professional Design </h2>
                     <p className="subtitle"> 
                         <span style={{display:"inline-block", width: "16px"}}></span>
-                        Our designers provide the most visually pleasing graphic designs for your business. We highly value responsiveness of the software products for each media devices
+                        Our designers provide the most visually pleasing graphic designs for your business. Goldenhand Software highly value responsiveness of the software products for each media devices
                         to be able to draw attention of all high end users for your business.
                     </p>
                 </div>
@@ -38,7 +38,7 @@ export default function Details() {
                     <p className="subtitle"> 
                         <span style={{display:"inline-block", width: "16px"}}></span>
                         As a software company, we rely on extremely safe, fast and convenient infrastructure for all of the software products that are developed by us.
-                        We follow OWASP standards to ensure there are no breaches in security that can harm your business.
+                        Goldenhand Software follows OWASP standards to ensure there are no breaches in security that can harm your business.
                     </p>
                 </div>
                 <div className="column is-4 ">
@@ -56,7 +56,7 @@ export default function Details() {
                     <p className="subtitle"> 
                         <span style={{display:"inline-block", width: "16px"}}></span>
                         We closely follow trend and algorithm changes on worldwide keywords for the most popular search engines.
-                        To be most efficient for your business, we aim to achieve highest rankings on different search listings.
+                        To be most efficient for your business, Goldenhand Software aims to achieve highest rankings on different search listings.
                     </p>
                 </div>
             </div>
@@ -66,7 +66,7 @@ export default function Details() {
                     <h2 className="title"> High Quality Content </h2>
                     <p className="subtitle"> 
                         <span style={{display:"inline-block", width: "16px"}}></span>
-                        With the best team of developers and designers, we aim to bring the highest quality content to your business on the internet.
+                        With the best team of developers and designers, Goldenhand Software aims to bring the highest quality content to your business on the internet.
                         We create unique contents for your business' social media accounts as well as web apps. 
                     </p>
                 </div>
@@ -84,7 +84,7 @@ export default function Details() {
                     <p className="subtitle"> 
                         <span style={{display:"inline-block", width: "16px"}}></span>
                         As a software company, we love beating challenges that tackle your business. Solving optimization issues for you is our priority.
-                        Whether it is a speed issue or a performance issue, we resolve it quickly and deliver to you as fast as possible.
+                        Whether it is a speed issue or a performance issue, Goldenhand Software resolves it quickly and deliver to you as fast as possible.
                     </p>
                 </div>
             </div>

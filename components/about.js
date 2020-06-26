@@ -15,7 +15,7 @@ export default function About() {
                             in their mobile/web development, design and hosting needs in London, United Kingdom.
                             We as a team use various modern frameworks and tools to be the most efficient and convenient for our clients.
                             <br /><br />Prioritising clients' needs by adapting modern innovations is our way of solving problems.
-                            We also provide search engine optimization, content writing and software maintenance for existing older 
+                            Goldenhand Software also provides search engine optimization, content writing and software maintenance for existing older 
                             mobile/web apps of on the various areas such as memory efficieny, network load, unit testing and performance.
                         </p>
                         <br />
