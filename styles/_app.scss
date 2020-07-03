@@ -407,6 +407,20 @@ body{
     font-family: $g-content-font, serif;
   }
 
+  .eye-icon {
+    color: #E6B749;
+    font-size: 6rem;
+  }
+
+  @media (max-width: 600px) {
+    .project-title {
+      font-size: 1rem;
+    }
+    .eye-icon {
+        font-size: 3rem;
+    }
+  }
+
 }
 //project component syling
 

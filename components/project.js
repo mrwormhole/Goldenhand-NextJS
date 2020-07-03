@@ -14,7 +14,7 @@ export default function Project({projectName, projectLink, projectImage}) {
                 <a href={projectLink} className="stretched-link" id="cardlink">
                     <div className="project-container">
                         <p className="project-title">{projectName}</p>
-                        <FontAwesomeIcon icon={faEye} style={{color: "#E6B749", fontSize: "6rem"}} />
+                        <FontAwesomeIcon icon={faEye} className="eye-icon" />
                     </div>
                 </a>
             </div>
