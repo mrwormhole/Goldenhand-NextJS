@@ -14,6 +14,7 @@ import Pricing from '../components/pricing'
 import Contact from '../components/contact'
 import Footer from "../components/footer"
 import FloatingActionButton from "../components/floatingActionButton" 
+import TestimonialsTest from '../components/testimonialsTest'
 
 export default function HomePage() {
   const [isLoading, setIsLoading] = useState(true);
@@ -63,7 +64,7 @@ export default function HomePage() {
         <Achievements />
         <Details />
         <Portfolio />
-        <Testimonials />
+        <TestimonialsTest />
         <Pricing />
         <Contact />
       </main>
