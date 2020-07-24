@@ -20,7 +20,6 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-scroll": "^1.7.16",
-    "react-slick": "^0.26.1",
     "sass": "^1.26.5",
     "slick-carousel": "^1.8.1",
     "swiper": "^6.0.4"
