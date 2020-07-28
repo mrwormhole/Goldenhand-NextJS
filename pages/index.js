@@ -14,7 +14,6 @@ import Pricing from '../components/pricing'
 import Contact from '../components/contact'
 import Footer from "../components/footer"
 import FloatingActionButton from "../components/floatingActionButton" 
-import Testimonials from '../components/testimonials'
 
 export default function HomePage() {
   const [isLoading, setIsLoading] = useState(true);

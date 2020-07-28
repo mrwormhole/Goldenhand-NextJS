@@ -17,8 +17,8 @@ export default () => {
     autoHeight={true}
     autoplay={1000}
     loopAdditionalSlides={4}
-    onSlideChange={() => {console.log('slide change');}}
-    onSwiper={(swiper) => console.log(swiper)}>
+    onSlideChange={() => {}}
+    onSwiper={(swiper) => { setInterval(() => {swiper.slideNext(1000) }, 5000)} }>
         <SwiperSlide>
             <TestimonialCard 
                 author="Annie Copeland"
