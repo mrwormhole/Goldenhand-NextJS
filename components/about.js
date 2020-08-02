@@ -3,11 +3,11 @@ import { Link } from "react-scroll";
 export default function About() {
     return (
         <section className="section is-medium" id="about">
-                <div className="columns reverse-columns">
-                    <div className= "column is-4 is-offset-2">
+                <div className="columns reverse-columns is-vcentered">
+                    <div className= "column is-5 is-offset-1">
                         <img className="animated-up-down" src="/business.png" alt="About our business" />
                     </div>
-                    <div className="column is-4">
+                    <div className="column is-5">
                         <h2 className="title"> About Us </h2>
                         <br />
                         <p className="subtitle"> 

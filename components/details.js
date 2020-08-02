@@ -4,7 +4,7 @@ export default function Details() {
         <section className="section is-medium" id="details">
             <h2 className="header"> Why Should You Choose Us? </h2>
 
-            <div className="columns" style={{marginTop: "3rem"}}>
+            <div className="columns is-vcentered" style={{marginTop: "3rem"}}>
                 <div className="column is-4 is-offset-2" style={{padding: "1.5rem 0.25rem"}}>
                     <h2 className="title"> Test Driven Development </h2>
                     <p className="subtitle"> 
@@ -18,7 +18,7 @@ export default function Details() {
                 </div>
             </div>
 
-            <div className="columns reverse-columns" style={{marginTop: "3rem"}}>
+            <div className="columns reverse-columns is-vcentered" style={{marginTop: "3rem"}}>
                 <div className="column is-4 is-offset-2">
                     <img className="animated-right-left" src="/professional-design.png" alt="Test Driven Development" />
                 </div>
@@ -32,7 +32,7 @@ export default function Details() {
                 </div>
             </div>
 
-            <div className="columns" style={{marginTop: "3rem"}}>
+            <div className="columns is-vcentered" style={{marginTop: "3rem"}}>
                 <div className="column is-4 is-offset-2" style={{padding: "1.5rem 0.25rem"}}>
                     <h2 className="title"> Secure Hosting </h2>
                     <p className="subtitle"> 
@@ -46,7 +46,7 @@ export default function Details() {
                 </div>
             </div>
 
-            <div className="columns reverse-columns" style={{marginTop: "3rem"}}>
+            <div className="columns reverse-columns is-vcentered" style={{marginTop: "3rem"}}>
                 <div className="column is-4 is-offset-2">
                     <img className="animated-right-left" src="/great-seo.png" alt="Test Driven Development" />
                 </div>
@@ -61,7 +61,7 @@ export default function Details() {
                 </div>
             </div>
 
-            <div className="columns" style={{marginTop: "3rem"}}>
+            <div className="columns is-vcentered" style={{marginTop: "3rem"}}>
                 <div className="column is-4 is-offset-2" style={{padding: "1.5rem 0.25rem"}}>
                     <h2 className="title"> High Quality Content </h2>
                     <p className="subtitle"> 
@@ -75,7 +75,7 @@ export default function Details() {
                 </div>
             </div>
 
-            <div className="columns reverse-columns" style={{marginTop: "3rem"}}>
+            <div className="columns reverse-columns is-vcentered" style={{marginTop: "3rem"}}>
                 <div className="column is-4 is-offset-2">
                     <img className="animated-right-left" src="/fast-maintenance.png" alt="Test Driven Development" />
                 </div>
