@@ -26,7 +26,12 @@ export default function Portfolio() {
                         projectImage="/medikey-project.jpg" 
                         projectLink="https://www.medikeyhealth.co.uk/" />
                 </div>
-                
+                <div className="column is-6-tablet is-6-desktop">
+                        <Project 
+                            projectName="Zeytun ABC Accounting"
+                            projectImage="/zeytun-project.jpg" 
+                            projectLink="https://www.zeytunabc.com/" />
+                </div>
             </div>
 
         </section>
