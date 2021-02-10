@@ -28,7 +28,7 @@ export default function Pricing() {
                 <div className="column is-3-tablet is-3-desktop plan">
                     <div className="">
                         <div className="ribbon ribbon-top-right"><span>Popular</span></div>
-                        <h3>Platinium</h3>
+                        <h3>Platinum</h3>
                         <h4> £599</h4>
                         <h5>+500£ Rush Delivery</h5>
                         <ul>
