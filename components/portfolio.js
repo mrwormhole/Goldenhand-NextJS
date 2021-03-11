@@ -33,6 +33,14 @@ export default function Portfolio() {
                             projectLink="https://www.zeytunabc.com/" />
                 </div>
             </div>
+            <div className="columns is-centered">
+                <div className="column is-6-tablet is-6-desktop">
+                    <Project 
+                        projectName="Atay Trade"
+                        projectImage="/atay-project.jpg" 
+                        projectLink="https://www.ataytrade.co.uk/" />
+                </div>
+            </div>
 
         </section>
     );
