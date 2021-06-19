@@ -1,33 +1,26 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser, faEnvelope, faPhone, faCalendar } from '@fortawesome/free-solid-svg-icons'
+import { SyntheticEvent } from 'react';
 
-function isFormEmpty(data) {
+function isFormEmpty(data: FormData) {
     if (data.email.trim() == "" ||  data.fullName.trim() == "" ||
         data.message.trim() == "" || data.phoneNumber.trim() == "" ||
-        data.startDate.trim == "") {
+        data.startDate.trim() == "") {
             return true;
     }
     return false;    
 }
 
-function resetFormValues(e) {
-    e.target.elements.name.value = "";
-    e.target.elements.email.value = "";
-    e.target.elements.number.value = "";
-    e.target.elements.date.value = "";
-    e.target.elements.message.value = "";
-}
-
-function toggleNotification(situation) {
+function toggleNotification(situation: string) {
     if (situation=="success") {
-        const notificationSucc = document.getElementsByClassName("notification")[0];
+        const notificationSucc: HTMLElement = document.getElementsByClassName("notification")[0] as HTMLElement;
         notificationSucc.style.display = "block";
         setTimeout(function() { 
             notificationSucc.style.display = "none" }
         , 3000);
     }
     else if (situation=="failure") {
-        const notificationFai = document.getElementsByClassName("notification")[1];
+        const notificationFai: HTMLElement = document.getElementsByClassName("notification")[1] as HTMLElement;
         notificationFai.style.display = "block";
         setTimeout(function() { 
             notificationFai.style.display = "none" }
@@ -35,12 +28,27 @@ function toggleNotification(situation) {
     }
 }
 
+type FormData = {
+    fullName: string,
+    email: string,
+    phoneNumber: string,
+    startDate: string,
+    message: string,
+}
+
 export default function Form() {
     return (
-        <form onSubmit={(e) => {
+        <form onSubmit={(e: SyntheticEvent) => {
             e.preventDefault();
-            const [name, email, number, date, message] = e.target.elements;
-            const data = {
+            const target = e.target as typeof e.target & {
+                name: { value: string },
+                email: { value: string },
+                number: { value: string},
+                date: {value: string},
+                message: {value: string},
+           };
+            const {name, email, number, date, message} = target;
+            const data : FormData = {
                 fullName: name.value,
                 email: email.value,
                 phoneNumber: number.value,
@@ -54,7 +62,11 @@ export default function Form() {
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(data)
                 });
-                resetFormValues(e);
+                target.name.value = "";
+                target.email.value = "";
+                target.number.value = "";
+                target.date.value = "";
+                target.message.value = "";
                 toggleNotification("success");
             } else {
                 toggleNotification("failure");

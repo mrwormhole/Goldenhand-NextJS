@@ -1,7 +1,14 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 
-export default function TestimonialCard({author, authorJob, authorComment, authorImage}) {
+type TestimonialCardProps = {
+    author: string
+    authorJob: string
+    authorComment: string
+    authorImage: string
+}
+
+export default function TestimonialCard({author, authorJob, authorComment, authorImage}: TestimonialCardProps) {
     return (
         <article className="media" id="testimonial-card">
             <figure className="media-left">

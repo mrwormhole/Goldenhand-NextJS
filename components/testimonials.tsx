@@ -15,7 +15,7 @@ export default () => {
     effect={"slide"}
     centeredSlides={true}
     autoHeight={true}
-    autoplay={1000}
+    autoplay={true}
     loopAdditionalSlides={4}
     onSlideChange={() => {}}
     onSwiper={(swiper) => { setInterval(() => {swiper.slideNext(1000) }, 5000)} }>

@@ -1,8 +1,9 @@
 export default function Footer() {
+    const currentYear: number = new Date().getFullYear()
     return (
         <footer className="footer">
                 <p>
-                    Copyright © 2020 <strong>Goldenhand Software Limited Company</strong>. The source code is licensed. All rights are reserved.
+                    Copyright © {currentYear} <strong>Goldenhand Software Limited Company</strong>. The source code is licensed. All rights are reserved.
                 </p>
                 <a
                     href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"

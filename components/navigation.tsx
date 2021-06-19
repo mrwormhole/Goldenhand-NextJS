@@ -1,8 +1,8 @@
 import { Link } from "react-scroll";
 
 function toggleBurger() {
-  const navbarBurger = document.getElementsByClassName("navbar-burger")[0];
-  const navbarMenu = document.getElementsByClassName("navbar-menu")[0];
+  const navbarBurger: Element = document.getElementsByClassName("navbar-burger")[0];
+  const navbarMenu: Element = document.getElementsByClassName("navbar-menu")[0];
 
   navbarBurger.classList.toggle("is-active");
   navbarMenu.classList.toggle("is-active");

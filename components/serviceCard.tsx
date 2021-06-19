@@ -1,6 +1,13 @@
+import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-export default function ServiceCard({serviceName, serviceDescription, icon}) {
+type ServiceCardProps = {
+    serviceName: string
+    serviceDescription: string
+    icon: IconDefinition
+}
+
+export default function ServiceCard({serviceName, serviceDescription, icon}: ServiceCardProps) {
     return (
         <div className="card " id="service-card">
             <div className="card-content">

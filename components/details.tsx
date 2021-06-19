@@ -1,4 +1,3 @@
-
 export default function Details() {
     return (
         <section className="section is-medium" id="details">

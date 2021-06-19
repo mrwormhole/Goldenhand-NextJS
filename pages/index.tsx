@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 
 import Preloader from "../components/preloader"
 import Navigation from "../components/navigation"
@@ -11,7 +11,7 @@ import Details from '../components/details'
 import Portfolio from '../components/portfolio'
 import Testimonials from '../components/testimonials'
 import Pricing from '../components/pricing'
-import Contact from '../components/contact'
+import Contact, { SocialLinks } from '../components/contact'
 import Footer from "../components/footer"
 import FloatingActionButton from "../components/floatingActionButton" 
 
@@ -28,6 +28,12 @@ export default function HomePage() {
     return (
       <Preloader />
     );
+  }
+
+  const socialLinks : SocialLinks = {
+    facebookURL: "https://www.facebook.com/goldenhandsoftware",
+    twitterURL: "https://twitter.com/goldenhand_dev",
+    instagramURL: "https://www.instagram.com/goldenhandsoftware",
   }
 
   return (
@@ -61,7 +67,7 @@ export default function HomePage() {
         <Portfolio />
         <Testimonials />
         <Pricing />
-        <Contact />
+        <Contact socialLinks={socialLinks}/>
       </main>
 
       <FloatingActionButton />

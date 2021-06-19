@@ -1,7 +1,13 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEye } from '@fortawesome/free-solid-svg-icons'
 
-export default function Project({projectName, projectLink, projectImage}) {
+type ProjectProps = {
+    projectName: string,
+    projectLink: string,
+    projectImage: string
+}
+
+export default function Project({projectName, projectLink, projectImage}: ProjectProps) {
     return (
         <div className="card is-paddingless" id="project">
             
