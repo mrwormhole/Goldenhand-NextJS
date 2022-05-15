@@ -5,6 +5,7 @@ export default function Portfolio() {
         <section className="section is-medium" id="portfolio">
             <h2 className="title"> Our Portfolio </h2>
             <br />
+            
             <div className="columns is-centered">
                 <div className="column is-6-tablet is-6-desktop">
                     <Project 
@@ -12,13 +13,20 @@ export default function Portfolio() {
                         projectImage="/vertigo-project.jpg" 
                         projectLink="http://vertigo-files.herokuapp.com/" />
                 </div>
-                <div className="column is-6-tablet is-6-desktop">
+                {/*<div className="column is-6-tablet is-6-desktop">
                     <Project 
                         projectName="Mindmap Education Consultancy"
                         projectImage="/mindmap-project.jpg" 
                         projectLink="http://mindmapedu.co.uk/" />
+                </div>*/}
+                <div className="column is-6-tablet is-6-desktop">
+                    <Project 
+                        projectName="Atay Trade"
+                        projectImage="/atay-project.jpg" 
+                        projectLink="https://www.ataytrade.co.uk/" />
                 </div>
             </div>
+
             <div className="columns is-centered">
                 <div className="column is-6-tablet is-6-desktop">
                     <Project 
@@ -31,14 +39,6 @@ export default function Portfolio() {
                             projectName="Zeytun ABC Accounting"
                             projectImage="/zeytun-project.jpg" 
                             projectLink="https://www.zeytunabc.com/" />
-                </div>
-            </div>
-            <div className="columns is-centered">
-                <div className="column is-6-tablet is-6-desktop">
-                    <Project 
-                        projectName="Atay Trade"
-                        projectImage="/atay-project.jpg" 
-                        projectLink="https://www.ataytrade.co.uk/" />
                 </div>
             </div>
 
