@@ -1,5 +1,7 @@
 @use 'sass:math';
-@import url('https://fonts.googleapis.com/css?family=Francois+One|Josefin+Sans&display=swap');
+
+//@import url('https://fonts.googleapis.com/css?family=Francois+One|Josefin+Sans&display=swap');
+@use './fonts';
 
 // Goldenhand Software Colors
 $g-red: #F92F45;
@@ -26,7 +28,7 @@ $navbar-burger-color: $g-red;
 $input-radius: 20px;
 $danger: $g-red;
 
-@import "../node_modules/bulma/bulma.sass";
+@use "../node_modules/bulma/bulma.sass";
 
 //navigation component styling
 .navbar {

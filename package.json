@@ -15,6 +15,7 @@
     "@fortawesome/react-fontawesome": "^0.1.14",
     "@sendgrid/mail": "^7.4.5",
     "@zeit/next-css": "^1.0.1",
+    "babel-plugin-macros": "^3.1.0",
     "bulma": "^0.9.3",
     "next": "12.1.0",
     "react": "17.0.2",

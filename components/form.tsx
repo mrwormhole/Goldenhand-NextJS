@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser, faEnvelope, faPhone, faCalendar } from '@fortawesome/free-solid-svg-icons'
 import { SyntheticEvent } from 'react';
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
 function isFormEmpty(data: FormData) {
     if (data.email.trim() == "" ||  data.fullName.trim() == "" ||
@@ -85,7 +86,7 @@ export default function Form() {
                 <div className="control has-icons-left">
                     <input className="input" id="name" type="text" placeholder="Your name" />
                     <span className="icon is-small is-left">
-                        <FontAwesomeIcon icon={faUser} />
+                        <FontAwesomeIcon icon={faUser as IconProp} />
                     </span>
                 </div>
             </div>
@@ -95,7 +96,7 @@ export default function Form() {
                 <div className="control has-icons-left">
                     <input className="input" id="email" type="email" placeholder="Your email" />
                     <span className="icon is-small is-left">
-                        <FontAwesomeIcon icon={faEnvelope} />
+                        <FontAwesomeIcon icon={faEnvelope as IconProp} />
                     </span>
                 </div>
             </div>
@@ -105,7 +106,7 @@ export default function Form() {
                 <div className="control has-icons-left">
                     <input className="input" id="number" type="text" placeholder="Your telephone number" />
                     <span className="icon is-small is-left">
-                        <FontAwesomeIcon icon={faPhone} />
+                        <FontAwesomeIcon icon={faPhone as IconProp} />
                     </span>
                 </div>
             </div>
@@ -115,7 +116,7 @@ export default function Form() {
                 <div className="control has-icons-left">
                     <input className="input" id="date" type="date" placeholder="Your estimated start date" />
                     <span className="icon is-small is-left">
-                        <FontAwesomeIcon icon={faCalendar} />
+                        <FontAwesomeIcon icon={faCalendar as IconProp} />
                     </span>
                 </div>
             </div>

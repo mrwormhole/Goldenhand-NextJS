@@ -1,10 +1,10 @@
-import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 type ServiceCardProps = {
     serviceName: string
     serviceDescription: string
-    icon: IconDefinition
+    icon: IconProp
 }
 
 export default function ServiceCard({serviceName, serviceDescription, icon}: ServiceCardProps) {

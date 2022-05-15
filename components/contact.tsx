@@ -1,6 +1,7 @@
 import Form from './form'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { IconProp } from '@fortawesome/fontawesome-svg-core'
 
 export type SocialLinks = {
     facebookURL: string
@@ -26,13 +27,13 @@ export default function Contact(props: {socialLinks : SocialLinks}) {
                             <nav className="level is-mobile">
                                 <div className="level is-mobile" style={{margin: "auto"}}>
                                     <a href={socialLinks.facebookURL} className="level-item">
-                                        <span className="icon is-large"><FontAwesomeIcon icon={faFacebook} /></span>
+                                        <span className="icon is-large"><FontAwesomeIcon icon={faFacebook as IconProp} /></span>
                                     </a>
                                     <a href={socialLinks.instagramURL} className="level-item">
-                                        <span className="icon is-medium"><FontAwesomeIcon icon={faTwitter} /></span>
+                                        <span className="icon is-medium"><FontAwesomeIcon icon={faTwitter as IconProp} /></span>
                                     </a>
                                     <a href={socialLinks.twitterURL} className="level-item">
-                                        <span className="icon is-medium"><FontAwesomeIcon icon={faInstagram} /></span>
+                                        <span className="icon is-medium"><FontAwesomeIcon icon={faInstagram as IconProp} /></span>
                                     </a>
                                 </div>
                             </nav>

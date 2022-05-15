@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEye } from '@fortawesome/free-solid-svg-icons'
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
 type ProjectProps = {
     projectName: string,
@@ -20,7 +21,7 @@ export default function Project({projectName, projectLink, projectImage}: Projec
                 <a href={projectLink} className="stretched-link" id="cardlink">
                     <div className="project-container">
                         <p className="project-title">{projectName}</p>
-                        <FontAwesomeIcon icon={faEye} className="eye-icon" />
+                        <FontAwesomeIcon icon={faEye as IconProp} className="eye-icon" />
                     </div>
                 </a>
             </div>

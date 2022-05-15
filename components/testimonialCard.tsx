@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
+import { IconProp } from '@fortawesome/fontawesome-svg-core'
 
 type TestimonialCardProps = {
     author: string
@@ -25,19 +26,19 @@ export default function TestimonialCard({author, authorJob, authorComment, autho
                         <nav className="level is-mobile">
                             <div className="level-left">
                                 <a className="level-item">
-                                    <span className="icon is-small"><FontAwesomeIcon icon={faStar} /></span>
+                                    <span className="icon is-small"><FontAwesomeIcon icon={faStar as IconProp} /></span>
                                 </a>
                                 <a className="level-item">
-                                    <span className="icon is-small"><FontAwesomeIcon icon={faStar} /></span>
+                                    <span className="icon is-small"><FontAwesomeIcon icon={faStar as IconProp} /></span>
                                 </a>
                                 <a className="level-item">
-                                    <span className="icon is-small"><FontAwesomeIcon icon={faStar} /></span>
+                                    <span className="icon is-small"><FontAwesomeIcon icon={faStar as IconProp} /></span>
                                 </a>
                                 <a className="level-item">
-                                    <span className="icon is-small"><FontAwesomeIcon icon={faStar} /></span>
+                                    <span className="icon is-small"><FontAwesomeIcon icon={faStar as IconProp} /></span>
                                 </a>
                                 <a className="level-item">
-                                    <span className="icon is-small"><FontAwesomeIcon icon={faStar} /></span>
+                                    <span className="icon is-small"><FontAwesomeIcon icon={faStar as IconProp} /></span>
                                 </a>
                             </div>
                         </nav>
