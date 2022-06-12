@@ -29,11 +29,11 @@ export default function Contact(props: {socialLinks : SocialLinks}) {
                                     <a href={socialLinks.facebookURL} className="level-item">
                                         <span className="icon is-large"><FontAwesomeIcon icon={faFacebook as IconProp} /></span>
                                     </a>
-                                    <a href={socialLinks.instagramURL} className="level-item">
-                                        <span className="icon is-medium"><FontAwesomeIcon icon={faInstagram as IconProp} /></span>
-                                    </a>
                                     <a href={socialLinks.twitterURL} className="level-item">
                                         <span className="icon is-medium"><FontAwesomeIcon icon={faTwitter as IconProp} /></span>
+                                    </a>
+                                    <a href={socialLinks.instagramURL} className="level-item">
+                                        <span className="icon is-medium"><FontAwesomeIcon icon={faInstagram as IconProp} /></span>
                                     </a>
                                 </div>
                             </nav>
