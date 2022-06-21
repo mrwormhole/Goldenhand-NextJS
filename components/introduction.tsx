@@ -9,7 +9,7 @@ export default function Introduction() {
               <div className="column is-5 is-offset-1">
                 <h1 className="title"> We develop <span>the right software</span> to build your business quickly and effectively </h1>
                 <br />
-                <h2 className="subtitle"> Customizable, Scalable and Convenient Software Solutions </h2>
+                <h2 className="subtitle"> Customizable, Convenient and Compact Software Solutions </h2>
                 <br />
                 <div className="buttons has-addons is-left">
                   <Link className="button is-warning is-outlined is-rounded is-medium" style={{width: "45%"}}
