@@ -9,31 +9,19 @@ export default function Portfolio() {
             <div className="columns is-centered">
                 <div className="column is-6-tablet is-6-desktop">
                     <Project 
-                        projectName="Vertigo File Hosting"
-                        projectImage="/vertigo-project.jpg" 
-                        projectLink="http://vertigo-files.herokuapp.com/" />
-                </div>
-                {/*<div className="column is-6-tablet is-6-desktop">
-                    <Project 
-                        projectName="Mindmap Education Consultancy"
-                        projectImage="/mindmap-project.jpg" 
-                        projectLink="http://mindmapedu.co.uk/" />
-                </div>*/}
-                <div className="column is-6-tablet is-6-desktop">
-                    <Project 
                         projectName="Atay Trade"
                         projectImage="/atay-project.jpg" 
                         projectLink="https://www.ataytrade.co.uk/" />
-                </div>
-            </div>
-
-            <div className="columns is-centered">
+                </div>    
                 <div className="column is-6-tablet is-6-desktop">
                     <Project 
                         projectName="Medikey Health Consultancy"
                         projectImage="/medikey-project.jpg" 
                         projectLink="https://www.medikeyhealth.co.uk/" />
                 </div>
+            </div>
+
+            <div className="columns is-centered">
                 <div className="column is-6-tablet is-6-desktop">
                         <Project 
                             projectName="Zeytun ABC Accounting"
