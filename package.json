@@ -14,19 +14,18 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@fortawesome/react-fontawesome": "^0.1.14",
     "@sendgrid/mail": "^7.4.5",
-    "@zeit/next-css": "^1.0.1",
     "babel-plugin-macros": "^3.1.0",
     "bulma": "^0.9.3",
-    "next": "12.1.0",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
+    "next": "13.1.6",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "react-scroll": "^1.8.2",
     "sass": "^1.35.1",
     "swiper": "^6.7.0"
   },
   "devDependencies": {
-    "@types/node": "^15.12.4",
-    "@types/react": "^17.0.11",
-    "typescript": "^4.3.4"
+    "@types/node": "^18.13.0",
+    "@types/react": "^18.0.28",
+    "typescript": "^4.9.5"
   }
 }

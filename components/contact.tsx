@@ -1,12 +1,13 @@
 import Form from './form'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook, faTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { IconProp } from '@fortawesome/fontawesome-svg-core'
 
 export type SocialLinks = {
     facebookURL: string
     twitterURL: string
     instagramURL: string
+    linkedinURL: string
 }
 
 export default function Contact(props: {socialLinks : SocialLinks}) {
@@ -34,6 +35,9 @@ export default function Contact(props: {socialLinks : SocialLinks}) {
                                     </a>
                                     <a href={socialLinks.instagramURL} className="level-item">
                                         <span className="icon is-medium"><FontAwesomeIcon icon={faInstagram as IconProp} /></span>
+                                    </a>
+                                    <a href={socialLinks.linkedinURL} className="level-item">
+                                        <span className="icon is-medium"><FontAwesomeIcon icon={faLinkedin as IconProp} /></span>
                                     </a>
                                 </div>
                             </nav>

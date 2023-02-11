@@ -34,6 +34,7 @@ export default function HomePage() {
     facebookURL: "https://www.facebook.com/goldenhandsoftware",
     twitterURL: "https://twitter.com/goldenhand_dev",
     instagramURL: "https://www.instagram.com/goldenhandsoftware",
+    linkedinURL: "https://www.linkedin.com/company/goldenhand-software"
   }
 
   return (
