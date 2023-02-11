@@ -38,8 +38,9 @@ export default function Contact(props: {socialLinks : SocialLinks}) {
                                 </div>
                             </nav>
                         </div>
+
                         <div className="tile is-child box">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2474.809384245761!2d-0.09449563422428249!3d51.663326279661064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761f4a8e25fe65%3A0xe86780eb04aa557d!2sGordon%20Hill%2C%20Enfield%20EN2%200QT!5e0!3m2!1sen!2suk!4v1596374449938!5m2!1sen!2suk" width="100%" height="100%" frameBorder="0" aria-hidden="false" tabIndex={0} ></iframe>
+                            <iframe src="https://maps.google.com/maps?q=sunbury&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" aria-hidden="false" tabIndex={0} ></iframe>
                         </div>
                     </div>
                     <div className="tile is-parent">
