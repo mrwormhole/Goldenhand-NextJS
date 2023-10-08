@@ -37,7 +37,7 @@ export default function Details() {
                     <p className="subtitle"> 
                         <span style={{display:"inline-block", width: "16px"}}></span>
                         As a software company, we rely on extremely safe, fast and convenient infrastructure for all of the software products that are developed by us.
-                        Goldenhand Software follows OWASP standards to ensure there are no breaches in security that can harm your business.
+                        Goldenhand Software follows security standards to ensure there are no breaches in security that can harm your business.
                     </p>
                 </div>
                 <div className="column is-4 ">

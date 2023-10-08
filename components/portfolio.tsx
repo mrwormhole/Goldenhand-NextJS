@@ -9,19 +9,10 @@ export default function Portfolio() {
             <div className="columns is-centered">
                 <div className="column is-6-tablet is-6-desktop">
                     <Project 
-                        projectName="Atay Trade"
-                        projectImage="/atay-project.jpg" 
-                        projectLink="https://www.ataytrade.co.uk/" />
-                </div>    
-                <div className="column is-6-tablet is-6-desktop">
-                    <Project 
                         projectName="Medikey Health Consultancy"
                         projectImage="/medikey-project.jpg" 
                         projectLink="https://www.medikeyhealth.co.uk/" />
                 </div>
-            </div>
-
-            <div className="columns is-centered">
                 <div className="column is-6-tablet is-6-desktop">
                         <Project 
                             projectName="Zeytun ABC Accounting"
@@ -29,6 +20,15 @@ export default function Portfolio() {
                             projectLink="https://www.zeytunabc.com/" />
                 </div>
             </div>
+
+            {/* <div className="columns is-centered">
+                <div className="column is-6-tablet is-6-desktop">
+                    <Project 
+                        projectName="Atay Trade"
+                        projectImage="/atay-project.jpg" 
+                        projectLink="https://www.ataytrade.co.uk/" />
+                </div>
+            </div> */}
 
         </section>
     );

@@ -22,10 +22,7 @@ export default function Contact(props: {socialLinks : SocialLinks}) {
                             <p className="small-title">Get In Touch</p>
                             <h5>+44 745 975 2164</h5>
                             <h5>info@goldenhandsoftware.co.uk</h5>
-                            <br />
-                            <br />
-                            <p className="small-title">Social Media</p>
-                            <nav className="level is-mobile">
+                            <nav className="level is-mobile  mb-3 mt-3">
                                 <div className="level is-mobile" style={{margin: "auto"}}>
                                     <a href={socialLinks.facebookURL} className="level-item">
                                         <span className="icon is-large"><FontAwesomeIcon icon={faFacebook as IconProp} /></span>
@@ -41,6 +38,7 @@ export default function Contact(props: {socialLinks : SocialLinks}) {
                                     </a>
                                 </div>
                             </nav>
+                            <a href="https://cal.com/GOLDENHAND" className="button is-warning is-rounded level-item">Book An Appointment</a>
                         </div>
 
                         <div className="tile is-child box">
