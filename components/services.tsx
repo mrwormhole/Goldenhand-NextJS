@@ -10,7 +10,7 @@ export default function Services() {
             <div className="columns is-centered">
                 <div className="column is-4-tablet is-3-desktop">
                     <ServiceCard serviceName={"Development"} icon={faCode as IconProp} 
-                        serviceDescription={"Effective web/mobile apps with flawless build quality, creating the perfect online presence of you and your business for customers"}/>
+                        serviceDescription={"Effective web apps with flawless build quality, creating the perfect online presence of you and your business for customers"}/>
                 </div>
                 <div className="column is-4-tablet is-3-desktop">
                     <ServiceCard serviceName={"Design"} icon={faPalette as IconProp}
@@ -32,7 +32,7 @@ export default function Services() {
                 </div>
                 <div className="column is-4-tablet is-3-desktop">
                     <ServiceCard serviceName={"Maintenance"} icon={faWrench as IconProp}
-                        serviceDescription={"Speed and performance has always been the crucial part of the web/mobile apps, we are here to fix and boost up your web/mobile apps to its next level"} />
+                        serviceDescription={"Speed and performance has always been the crucial part of the web apps, we are here to fix and boost up your web apps to its next level"} />
                 </div>
             </div>
         </section>
